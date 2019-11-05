@@ -1,0 +1,65 @@
+$colors: (
+  main-color: #e24727,
+  text-color: #f0e5d3,
+  icon-color: rgb(64, 61, 243),
+  nav-color: #422626
+);
+
+@function color($colorName) {
+  @return map-get($map: $colors, $key: $colorName );
+}
+
+$desktop: 1000px;
+$ipad: 760px;
+
+@mixin desktop {
+   @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (min-width: #{$ipad}) {
+   @content;
+ }
+}
+
+.image {
+  margin-top: 2rem;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid color(main-color);
+  }
+}
+
+.contain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.left {
+  text-align: center;
+  color: color(text-color);
+  margin-top: 1.5rem;
+  font-weight: 300;
+  text-shadow: 0 0 2px #333;
+  h3 {
+    margin: .7rem 0;
+  }
+  p {
+    margin-top: -.4rem;
+  }
+}
+
+.sec {
+  @include desktop() {
+    margin-left: 10rem;
+  }
+
+}

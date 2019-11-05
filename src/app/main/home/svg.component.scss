@@ -1,0 +1,86 @@
+$desktop: 1000px;
+$ipad: 760px;
+
+@mixin desktop {
+   @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (min-width: #{$ipad}) {
+   @content;
+ }
+}
+
+svg {
+  width: 300px;
+  text-align: center;
+  @include ipad() {
+    width: 350px;
+  }
+  @include desktop() {
+    width: 400px;
+  }
+}
+
+.remove-stroke {
+  animation: strokes 1s 2s forwards;
+}
+.color-one {
+  fill: none  !important;
+  animation: fill-one 1s 2s forwards;
+}
+.color-two {
+  fill: none  !important;
+  animation: fill-two 1s 2s forwards;
+}
+.color-three {
+  fill: none  !important;
+  animation: fill-three 1s 2s forwards;
+}
+.color-four {
+  fill: none  !important;
+  animation: fill-four 1s 2s forwards;
+}
+
+@keyframes fill-one {
+  from {
+    fill: none;
+  }
+  to {
+    fill: #f0e5d3;
+  }
+}
+@keyframes fill-two {
+  from {
+    fill: none;
+  }
+  to {
+    fill: #e24727;
+  }
+}
+@keyframes fill-three {
+  from {
+    fill: none;
+  }
+  to {
+    fill: #f6b251;
+  }
+}
+@keyframes fill-four {
+  from {
+    fill: none;
+  }
+  to {
+    fill: #43fa55;
+  }
+}
+@keyframes strokes {
+  from {
+    stroke: oldlace;
+  }
+  to {
+    stroke: none !important;
+  }
+}

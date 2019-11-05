@@ -1,0 +1,41 @@
+<nav>
+<div class="logo">
+  Dave
+</div>
+  <div class="nav-btn" (click)="showMenu()">
+      <i class="fa fa-navicon" aria-hidden="true"></i>
+  </div>
+</nav>
+
+<div class="menu" [class.showMenu]="menu">
+  <ul class="menu-ctn">
+      <li [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <p class="text">Home</p>
+      </li>
+      <li [routerLink]="['/about']" routerLinkActive="active">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          <p class="text">About</p>
+      </li>
+      <li [routerLink]="['/work']" routerLinkActive="active">
+        <i class="fa fa-wordpress" aria-hidden="true"></i>
+        <p class="text">Works</p>
+      </li>
+      <li [routerLink]="['/contact']" routerLinkActive="active">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p class="text">Contact</p>
+      </li>
+  </ul>
+  </div>
+
+<div class="social">
+  <span class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+  <span class="git"><i class="fa fa-github" aria-hidden="true"></i></span>
+  <span class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+</div>
+
+
+
+
+
+

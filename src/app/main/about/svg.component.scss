@@ -1,0 +1,66 @@
+$desktop: 1000px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+   @content;
+ }
+}
+
+svg {
+  width: 100%;
+  @include desktop() {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+}
+.group path {
+  fill: none;
+  animation: path 1s 2s forwards;
+}
+image {
+  scale: 0;
+  animation: image 1s 2s forwards;
+}
+.group {
+  opacity: 1;
+  animation: non 1s 2s forwards;
+}
+svg path{
+  fill: none;
+  animation: fill 1s 2s forwards;
+}
+@keyframes non {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  from {
+    fill: none;
+  }
+  to {
+    fill: #EF4136;
+  }
+}
+
+@keyframes path {
+  from {
+    fill: none;
+  }
+  to {
+    fill: #fff;
+  }
+}
+@keyframes image {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}

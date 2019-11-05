@@ -1,0 +1,54 @@
+$colors: (
+  main-color: rgb(224, 70, 40),
+  main-color-b: rgba(239, 227, 209, 0.5),
+  text-color: rgb(239, 227, 209),
+  icon-color: rgb(64, 61, 243),
+  nav-color: #422626
+);
+
+@function color($colorName) {
+  @return map-get($map: $colors, $key: $colorName );
+}
+
+$desktop: 1000px;
+$ipad: 760px;
+
+@mixin desktop {
+   @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (min-width: #{$ipad}) {
+   @content;
+ }
+}
+
+.card {
+  width: 90% !important;
+  background: color(main-color-b) !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none !important;
+  padding: 2rem;
+  @include desktop() {
+    width: 60% !important;
+  }
+  form {
+    text-align: center;
+    input {
+      background: color(text-color) !important;
+    }
+
+    textarea {
+      background: color(text-color) !important;
+    }
+    button {
+      background: color(main-color) !important;
+      border: none !important;
+    }
+  }
+}
