@@ -14,13 +14,18 @@ $ipad: 760px;
 }
 
 svg {
-  width: 300px;
+  width: 100%;
   text-align: center;
-  @include ipad() {
-    width: 350px;
-  }
-  @include desktop() {
-    width: 400px;
+  transition: transform .9;
+  // @include ipad() {
+  //   width: 350px;
+  // }
+  // @include desktop() {
+  //   width: 400px;
+  // }
+  &:hover {
+    transform: scale(0.9);
+    transform: skewY(-10deg);
   }
 }
 
