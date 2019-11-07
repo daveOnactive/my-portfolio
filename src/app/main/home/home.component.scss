@@ -1,7 +1,21 @@
+$desktop: 740px;
+
+@mixin desktop {
+  @media(min-width: #{$desktop}) {
+    @content;
+  }
+}
+
 .container {
+  @include desktop() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
   text-align: center;
 }
