@@ -14,39 +14,37 @@ $ipad: 760px;
 }
 
 svg {
-  width: 100%;
+  margin: 0.5rem 0;
+  margin-top: 5rem;
+  width: 70%;
   text-align: center;
   transition: transform .9;
-  // @include ipad() {
-  //   width: 350px;
-  // }
-  // @include desktop() {
-  //   width: 400px;
-  // }
-  &:hover {
-    transform: scale(0.9);
-    transform: skewY(-10deg);
+  @include ipad() {
+    margin-top: 0;
+  }
+  @include desktop() {
+    margin-top: 0;
   }
 }
 
 .remove-stroke {
-  animation: strokes 1s 2s forwards;
+  animation: strokes 1s 3s forwards;
 }
 .color-one {
   fill: none  !important;
-  animation: fill-one 1s 2s forwards;
+  animation: fill-one 1s 3s forwards;
 }
 .color-two {
   fill: none  !important;
-  animation: fill-two 1s 2s forwards;
+  animation: fill-two 1s 3s forwards;
 }
 .color-three {
   fill: none  !important;
-  animation: fill-three 1s 2s forwards;
+  animation: fill-three 1s 3s forwards;
 }
 .color-four {
   fill: none  !important;
-  animation: fill-four 1s 2s forwards;
+  animation: fill-four 1s 3s forwards;
 }
 
 @keyframes fill-one {

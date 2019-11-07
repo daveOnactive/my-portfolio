@@ -24,7 +24,15 @@ export class AboutComponent implements AfterViewInit {
       opacity: [0, 1],
       translateY: [100, 0],
       duration: 500
-    })
+    });
+
+    anime({
+      targets: '.abt',
+      opacity: [0, 1],
+      scale: [0, 1],
+      duration: 1000,
+      delay: 50
+    });
   }
 
 }

@@ -11,7 +11,6 @@ import { HomeModule } from './main/home/home.module';
 import { WorksModule } from './main/work/works.module';
 import { ContactModule } from './main/contact/contact.module';
 import { AboutModule } from './main/about/about.module';
-
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', component: HomeComponent }
@@ -30,7 +29,7 @@ const routes: Routes = [
     HomeModule,
     AboutModule,
     WorksModule,
-    ContactModule
+    ContactModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
