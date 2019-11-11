@@ -22,7 +22,7 @@ export class AboutComponent implements AfterViewInit {
     t1.add({
       targets: '.ctn',
       opacity: [0, 1],
-      translateY: [100, 0],
+      scale: [1.5, 1],
       duration: 500
     });
 

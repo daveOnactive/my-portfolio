@@ -40,8 +40,8 @@ $ipad: 760px;
 }
 
 .contain {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  min-height: 100vh;
   text-align: center;
 }
 
