@@ -6,44 +6,41 @@ import * as anime from 'animejs';
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
-export class ProjectComponent implements OnInit, AfterViewInit {
+export class ProjectComponent implements AfterViewInit {
   tl: any;
+  show: boolean;
+  works: any[] = [
+    {
+      id: 1,
+      title: 'Random Fact Generator',
+      discrip: 'This is a web application that generates random fact about maths, year and trivia',
+      image: '/assets/images/random fact.PNG'
+    }
+  ];
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
   ngAfterViewInit() {
-    this.tl = anime.timeline({
-      easing: 'easeOutExpo',
-      duration: 750,
-      autoplay: false
+    anime({
+      tragets: '.carrier',
+      opacity: [0, 1],
+      scale: [0, 1],
+      duration: 1000,
+      delay: 50
     });
 
-    this.tl.add({
-      targets: '.showcase',
-      scale: [1, 0]
-    });
-    this.tl.add({
-      targets: '.carrier',
-      width: 700,
-      height: 300
-    });
-    this.tl.add({
-      targets: '.content',
-      y: 0,
-      opacity: [0, 1]
-    })
+    // this.tl = anime({
+    //   tragtes: '.wrapper',
+    //   width: 1000,
+    //   height: 500,
+    //   duration: 700,
+    //   autoplay: false
+    // });
   }
 
-  anime() {
-    this.tl.play();
+  showPopUp() {
+    // this.show = true;
   }
-
-  // showMenu() {
-  //   this.anime('frwd');
-  //   console.log('helo');
-  // }
 
 }
+

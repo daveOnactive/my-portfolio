@@ -1,33 +1,14 @@
 <div class="container">
-  <div class="carrier">
-    <div class="showcase" (click)="anime()">
+  <div class="carrier" *ngFor="let work of works" (click)="showPopUp()">
+    <div class="showcase">
       <div class="image">
-        <img src="/assets/images/random fact.PNG" alt="">
+        <img [src]=work.image alt="">
       </div>
       <div class="heading">
-        <h3>Random Fact Generator</h3>
+        <h3>{{ work.title }}</h3>
       </div>
-    </div>
-    <div class="content">
-      <div class="img">
-        <img src="/assets/images/random fact.PNG" alt="">
-      </div>
-      <div class="ctn">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto accusantium exercitationem possimus nobis rem eaque.</p>
-        <div class="link">
-          <a href="#" class="links">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="#" class="links">
-            <i class="fa fa-bookmark" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="cancel">
-      <span>
-        <i class="fa fa-times-circle" aria-hidden="true"></i>
-      </span>
     </div>
   </div>
 </div>
+<app-show [show]=show></app-show>
+<div class="wrapper"></div>

@@ -43,9 +43,12 @@ $ipad: 760px;
   padding: 1rem;
   cursor: pointer;
   border-radius: 10px;
+  z-index: 1;
   .showcase {
     // opacity: 0;
     // display: none;
+    // position: absolute;
+    // top: 0;
   }
 
   .image {
@@ -67,6 +70,8 @@ $ipad: 760px;
 
   .content {
     opacity: 0;
+    transform: translateY(-70%);
+    // z-index: -1;
     @include desktop() {
       display: flex;
       justify-content: space-evenly;
@@ -100,18 +105,11 @@ $ipad: 760px;
   }
 }
 
-.cancel {
+.wrapper {
   position: absolute;
-  top: 5px;
-  right: 10px;
-  display: none;
-  span {
-    font-size: 1.4rem;
-  }
-}
-
-button {
-  background: none;
-  border: none;
-  outline: none;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  // width: 100%;
+  // height: 100%;
 }

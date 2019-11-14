@@ -1,0 +1,21 @@
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e24727;
+  border-radius: 10px;
+  width: 700px;
+  height: 300px;
+
+  .cancel {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    opacity: 0;
+    color: #fff;
+    span {
+      font-size: 10rem;
+    }
+  }
+}
