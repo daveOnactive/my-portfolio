@@ -1,21 +1,113 @@
+$colors: (
+  main-color: #e24727,
+  text-color: #f0e5d3,
+  icon-color: rgb(64, 61, 243),
+  nav-color: #422626
+);
+
+@function color($colorName) {
+  @return map-get($map: $colors, $key: $colorName );
+}
+
+$desktop: 1000px;
+$ipad: 760px;
+
+@mixin desktop {
+   @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (min-width: #{$ipad}) {
+   @content;
+ }
+}
+
+main {
+  overflow: none;
+}
+.container {
+  background: rgba(0, 0, 0, 0.9);
+  min-height: 100vh;
+  z-index: 2;
+  margin-right: 4.5rem;
+}
+
 .wrapper {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 55%;
+  transform: translate(-55%, -50%);
   background: #e24727;
   border-radius: 10px;
-  width: 700px;
-  height: 300px;
+  width: 80%;
+  height: 68%;
+  z-index: 3;
+  @include desktop() {
+    height: 50%;
+    width: 60%
+  }
+}
 
-  .cancel {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    opacity: 0;
-    color: #fff;
-    span {
-      font-size: 10rem;
+.content {
+  @include desktop() {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  color: color(text-color);
+  .img {
+    width: 100%;
+    height: 300px;
+    @include desktop() {
+      width: 700px;
+      height: 290px;
     }
+    img {
+      width: 90%;
+      height: 100%;
+      margin:.8rem;
+      @include desktop() {
+        margin: .8rem;
+      }
+    }
+  }
+
+  .section {
+    text-align: center;
+    @include desktop() {
+      text-align: left;
+    }
+    h3 {
+      font-weight: bold;
+      font-variant: small-caps;
+      margin-top: .8rem;
+    }
+
+    p {
+      line-height: 1.6;
+      letter-spacing: 1px;
+      word-wrap: 2px;
+    }
+
+    .link {
+      span {
+        font-size: 1.3rem;
+        color: color(text-color);
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}
+
+.cancel {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: color(text-color);
+  cursor: pointer;
+  outline: none;
+  span {
+    font-size: 1.15rem;
   }
 }

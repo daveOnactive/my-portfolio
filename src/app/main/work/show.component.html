@@ -1,9 +1,29 @@
-<div class="container">
-  <div class="wrapper" *ngIf="show">
+<main>
+  <div class="container">
+  </div>
+
+  <div class="wrapper">
+    <div class="content" *ngFor="let data of current">
+      <div class="img">
+        <img [src]="data.image" alt="">
+      </div>
+      <div class="section">
+        <h3>{{ data.title }}</h3>
+        <p>{{ data.discrip }}</p>
+        <div class="link">
+          <span>
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          <span>
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
     <div class="cancel">
-      <span>
-        <i class="fa fa-times" aria-hidden="true"></i>
+      <span [routerLink]="['/work']" >
+        <i class="fa fa-times-circle" aria-hidden="true"></i>
       </span>
     </div>
   </div>
-</div>
+</main>

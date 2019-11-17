@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="carrier" *ngFor="let work of works" (click)="showPopUp()">
-    <div class="showcase">
+  <div class="carrier" *ngFor="let work of works">
+    <div class="showcase" id="show" [routerLink]="['/work', work.id]">
       <div class="image">
         <img [src]=work.image alt="">
       </div>
@@ -10,5 +10,3 @@
     </div>
   </div>
 </div>
-<app-show [show]=show></app-show>
-<div class="wrapper"></div>

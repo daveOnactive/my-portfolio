@@ -9,7 +9,6 @@ import { HomeComponent } from './main/home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeModule } from './main/home/home.module';
 import { WorksModule } from './main/work/works.module';
-import { ContactModule } from './main/contact/contact.module';
 import { AboutModule } from './main/about/about.module';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -29,7 +28,6 @@ const routes: Routes = [
     HomeModule,
     AboutModule,
     WorksModule,
-    ContactModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
