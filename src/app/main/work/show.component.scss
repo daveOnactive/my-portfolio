@@ -42,9 +42,10 @@ main {
   background: #e24727;
   border-radius: 10px;
   width: 80%;
-  height: 68%;
+  min-height: 68%;
   z-index: 3;
   @include desktop() {
+    min-height: 0;
     height: 50%;
     width: 60%
   }

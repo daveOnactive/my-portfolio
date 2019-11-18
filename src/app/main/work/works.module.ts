@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WorkComponent } from './work.component';
 import { ProjectComponent } from './project.component';
 import { ShowComponent } from './show.component';
+import { ToolsComponent } from './tools.component';
 
 const routes: Routes = [
   { path: 'work', component: WorkComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   declarations: [
     WorkComponent,
     ProjectComponent,
-    ShowComponent
+    ShowComponent,
+    ToolsComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,13 @@
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.container {
+  display: flex;
+  margin: 1rem 0;
+  margin-left: -0.5rem;
+  .tool {
+    margin: 0 0.5rem;
+  }
+}

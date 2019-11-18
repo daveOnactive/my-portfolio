@@ -10,6 +10,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeModule } from './main/home/home.module';
 import { WorksModule } from './main/work/works.module';
 import { AboutModule } from './main/about/about.module';
+// import { ToolsComponent } from './shared/tools.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', component: HomeComponent }
@@ -20,6 +21,7 @@ const routes: Routes = [
     AppComponent,
     MainComponent,
     NavComponent,
+    // ToolsComponent,
   ],
   imports: [
     NgxTypedJsModule,

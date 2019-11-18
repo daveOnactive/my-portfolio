@@ -15,11 +15,6 @@ export class ProjectComponent implements AfterViewInit {
   constructor(private work: DataService) { }
 
   ngAfterViewInit() {
-    anime({
-      tragets: 'h3',
-      scale: [1, 0],
-      duration: 1000
-    });
   }
 
 }

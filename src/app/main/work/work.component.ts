@@ -7,19 +7,28 @@ import * as anime from 'animejs';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements AfterViewInit {
-
+  tl: any;
   constructor() { }
 
 
 
   ngAfterViewInit() {
-    anime({
+    this.tl = anime.timeline({
+      duration: 1000
+    })
+
+    this.tl.add({
       targets: '.pr',
       opacity: [0, 1],
       scale: [0, 1],
       duration: 1000,
       delay: 50
     });
+
+    this.tl.add({
+      targets: '.container',
+      opacity: [0, 1]
+    })
   }
 
 }
