@@ -15,7 +15,7 @@ export class WorkComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.tl = anime.timeline({
       duration: 1000
-    })
+    });
 
     this.tl.add({
       targets: '.pr',

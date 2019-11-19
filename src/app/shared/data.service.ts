@@ -7,17 +7,17 @@ export class DataService {
   works: any[] = [
     {
       id: 1,
-      title: 'Random Fact Generator',
-      discrip: 'This is a web application that generates random fact about maths, year and trivia',
-      image: '/assets/images/random fact.PNG',
-      type: true,
-      github: 'https://github.com/daveOnactive/random-fact-generator',
-      link: 'http://organic-nail.surge.sh/'
+      title: 'Movie Checkout',
+      discrip: 'These a web application that allows user to get information about newly published movies and also search any movie',
+      image: '/assets/images/netflix.PNG',
+      type: false,
+      github: 'https://github.com/daveOnactive/mini-netflix-app',
+      link: ''
     },
     {
       id: 2,
       title: 'Pixel Art Maker',
-      discrip: 'This is a simple online pixel art editor to help you make pixel art easily.',
+      discrip: 'These a simple online pixel art editor to help you make pixel art easily.',
       image: '/assets/images/pixel.PNG',
       type: true,
       github: 'https://github.com/daveOnactive/pixel-art-maker',
@@ -33,9 +33,18 @@ export class DataService {
       github: 'https://github.com/daveOnactive/bookmarker-application',
       link: 'http://half-smash.surge.sh/'
     },
-
     {
       id: 4,
+      title: 'Random Fact Generator',
+      discrip: 'These a web application that generates random fact about maths, year and trivia',
+      image: '/assets/images/random fact.PNG',
+      type: true,
+      github: 'https://github.com/daveOnactive/random-fact-generator',
+      link: 'http://organic-nail.surge.sh/'
+    },
+
+    {
+      id: 5,
       title: 'Todo list App',
       discrip: 'Alc4.0 Rivers project ..Simple Todo list app to help you schedule your daily routine ',
       image: '/assets/images/t1.PNG',
