@@ -23,9 +23,17 @@ export class DataService {
       github: 'https://github.com/daveOnactive/pixel-art-maker',
       link: 'https://brave-mclean-156fc0.netlify.com/dist/'
     },
-
     {
       id: 3,
+      title: 'My Portfolio',
+      discrip: 'This is my portfolio which i built with love',
+      image: '/assets/images/port.PNG',
+      type: false,
+      github: 'https://github.com/daveOnactive/my-portfolio',
+      link: ''
+    },
+    {
+      id: 4,
       title: 'Bookmarker Web App',
       discrip: 'A bookmarker application to save your favorite website',
       image: '/assets/images/bookmarker.PNG',
@@ -34,7 +42,7 @@ export class DataService {
       link: 'http://half-smash.surge.sh/'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Random Fact Generator',
       discrip: 'These a web application that generates random fact about maths, year and trivia',
       image: '/assets/images/random fact.PNG',
@@ -44,7 +52,7 @@ export class DataService {
     },
 
     {
-      id: 5,
+      id: 6,
       title: 'Todo list App',
       discrip: 'Alc4.0 Rivers project ..Simple Todo list app to help you schedule your daily routine ',
       image: '/assets/images/t1.PNG',

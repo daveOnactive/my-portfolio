@@ -29,12 +29,12 @@ $ipad: 760px;
   img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    border: 5px solid color(main-color);
+    // border-radius: 50%;
+    // border: 5px solid color(main-color);
     @include desktop() {
       width: 200px;
       height: 200px;
-      border: 8px solid color(main-color);
+      // border: 8px solid color(main-color);
     }
   }
 }

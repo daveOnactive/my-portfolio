@@ -12,18 +12,19 @@ export class AboutComponent implements AfterViewInit {
   constructor() { }
   ngAfterViewInit() {
     const t1 = anime.timeline({
-      delay: 100
+      // delay: 100
+      duration: 1000
     });
     t1.add({
       targets: '.image img',
-      scale: [0, 1],
-      duration: 4000
+      opacity: [0, 1],
+      translateY: [-50, 0],
+      delay: 800
     });
     t1.add({
       targets: '.ctn',
       opacity: [0, 1],
       scale: [1.5, 1],
-      duration: 500
     });
 
     anime({
@@ -31,7 +32,7 @@ export class AboutComponent implements AfterViewInit {
       opacity: [0, 1],
       scale: [0, 1],
       duration: 1000,
-      delay: 50
+      delay: 1000
     });
   }
 

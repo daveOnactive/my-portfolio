@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { slideInAnimation } from 'src/app/app.animation';
 
 @Component({
   selector: 'app-nav',

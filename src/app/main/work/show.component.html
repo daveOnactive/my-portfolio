@@ -5,7 +5,9 @@
   <div class="wrapper">
     <div class="content" *ngFor="let data of current">
       <div class="img">
-        <img [src]="data.image" alt="">
+        <a [href]=data.link target="_blank">
+         <img [src]="data.image" alt="">
+        </a>
       </div>
       <div class="section">
         <h3>{{ data.title }}</h3>

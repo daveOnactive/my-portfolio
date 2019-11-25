@@ -15,6 +15,7 @@ export class ProjectComponent implements AfterViewInit {
   constructor(private work: DataService) { }
 
   ngAfterViewInit() {
+
   }
 
 }

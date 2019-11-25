@@ -14,7 +14,7 @@ export class WorkComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.tl = anime.timeline({
-      duration: 1000
+      duration: 700
     });
 
     this.tl.add({
@@ -22,13 +22,14 @@ export class WorkComponent implements AfterViewInit {
       opacity: [0, 1],
       scale: [0, 1],
       duration: 1000,
-      delay: 50
+      // delay: 50
     });
 
-    this.tl.add({
-      targets: '.container',
-      opacity: [0, 1]
-    })
+    // this.tl.add({
+    //   targets: '.container',
+    //   opacity: [0, 1],
+    //   translateY: [50, 0]
+    // })
   }
 
 }

@@ -28,14 +28,15 @@ export class ShowComponent implements OnInit, OnChanges, AfterViewInit {
       easing: 'easeInOutSine'
     });
 
-    this.tl.add({
-      targets: '.container',
-      rotateX: ['180deg', 0]
-    });
+    // this.tl.add({
+    //   targets: '.container',
+    //   rotateX: ['180deg', 0]
+    // });
 
     this.tl.add({
       targets: '.wrapper',
       opacity: [0, 1],
+      delay: 500
     });
   }
 

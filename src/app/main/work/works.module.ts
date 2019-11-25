@@ -5,10 +5,12 @@ import { WorkComponent } from './work.component';
 import { ProjectComponent } from './project.component';
 import { ShowComponent } from './show.component';
 import { ToolsComponent } from './tools.component';
+import { SafeGuard } from 'src/app/shared/safe.guard';
 
 const routes: Routes = [
   { path: 'work', component: WorkComponent },
-  { path: 'work/:id', component: ShowComponent },
+  { path: 'work/:id', component: ShowComponent,
+    canActivate: [SafeGuard] },
 ];
 
 @NgModule({
