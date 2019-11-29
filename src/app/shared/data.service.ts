@@ -12,7 +12,7 @@ export class DataService {
       image: '/assets/images/netflix.PNG',
       type: false,
       github: 'https://github.com/daveOnactive/mini-netflix-app',
-      link: ''
+      link: 'https://moviecheckout.netlify.com'
     },
     {
       id: 2,

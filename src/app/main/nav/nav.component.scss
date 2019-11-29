@@ -24,6 +24,11 @@ $ipad: 760px;
  }
 }
 
+a {
+  text-decoration: none;
+  color: color(text-color);
+}
+
 nav {
   box-sizing: border-box;
   position: fixed;
