@@ -53,6 +53,7 @@ $ipad: 760px;
   margin-top: 1.5rem;
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
   @include desktop() {
     top: 50%;
     left: 50%;
