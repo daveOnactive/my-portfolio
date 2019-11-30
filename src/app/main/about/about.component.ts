@@ -7,12 +7,11 @@ import * as anime from 'animejs';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements AfterViewInit {
-  image: any = 'assets/images/bart-simpson-png-39265.png';
+  image: any = 'https://res.cloudinary.com/chidi6ix/image/upload/v1574208914/bart-simpson-png-39265_drcvo0.png';
 
   constructor() { }
   ngAfterViewInit() {
     const t1 = anime.timeline({
-      // delay: 100
       duration: 1000
     });
     t1.add({
