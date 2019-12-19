@@ -28,23 +28,23 @@ svg {
 }
 
 .remove-stroke {
-  animation: strokes 1s 2.5s forwards;
+  animation: strokes 1s 7s forwards;
 }
 .color-one {
   fill: none  !important;
-  animation: fill-one 1s 2.5s forwards;
+  animation: fill-one 1s 7s forwards;
 }
 .color-two {
   fill: none  !important;
-  animation: fill-two 1s 2.5s forwards;
+  animation: fill-two 1s 7s forwards;
 }
 .color-three {
   fill: none  !important;
-  animation: fill-three 1s 2.5s forwards;
+  animation: fill-three 1s 7s forwards;
 }
 .color-four {
   fill: none  !important;
-  animation: fill-four 1s 2.5s forwards;
+  animation: fill-four 1s 7s forwards;
 }
 
 @keyframes fill-one {
