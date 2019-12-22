@@ -16,8 +16,8 @@ export class SvgHomeComponent implements AfterViewInit {
       targets: '#svg path',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
-      duration: 500,
-      delay: (el, i) => { return i * 500 }
+      duration: 10,
+      delay: (el, i) => { return i * 50 }
     });
   }
 
